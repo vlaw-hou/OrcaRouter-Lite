@@ -3,11 +3,11 @@ services:
     build: .
     container_name: orcarouter-lite
     ports:
-      - "8000:8000"
+      - 100.92.42.42:8000:8000
     env_file:
       - .env
     volumes:
-      - lite-data:/data
+      - /opt/vps3/vps3-data/orcarouter-lite/orl-data:/data
     environment:
       - DATABASE_URL=sqlite+aiosqlite:////data/orca.db
 
