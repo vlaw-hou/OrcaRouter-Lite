@@ -7,7 +7,7 @@ services:
     env_file:
       - .env
     networks:
-      - caddynet:
+      - caddynet
     volumes:
       - /opt/vps3/vps3-data/orcarouter-lite/orl-data:/data
     environment:
