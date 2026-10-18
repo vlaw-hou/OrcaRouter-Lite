@@ -3,7 +3,7 @@ services:
     build: .
     container_name: orcarouter-lite
     ports:
-      - 100.92.42.42:8000:8000
+      - 100.92.42.42:8055:8000
     env_file:
       - .env
     volumes:
